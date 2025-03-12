@@ -1,4 +1,4 @@
 # CHANGELOG
 
-__version__ = "0.0.0"
-https://github.com/obar1/pyproject-template/issues/0
+__version__ = "0.0.1"
+https://github.com/obar1/py-tiny-datastructures/issues/1

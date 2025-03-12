@@ -1,18 +1,9 @@
-# pyproject-template
+# py-tiny-datastructures
 
-[![Makefile CI](https://github.com/obar1/pyproject-template/actions/workflows/makefile.yml/badge.svg)](https://github.com/obar1/pyproject-template/actions/workflows/makefile.yml)
+[![Makefile CI](https://github.com/obar1/py-tiny-datastructures/actions/workflows/makefile.yml/badge.svg)](https://github.com/obar1/py-tiny-datastructures/actions/workflows/makefile.yml)
 
-simple pyproject template with some factories
+py tiny data structures
 
-> check
-```
-$ ls -1 *.*p*
-
-demo_api_from_notebook.ipynb
-demo_from_cli.py
-run_api.py
-
-```
 ## init
 
 use make
@@ -20,4 +11,40 @@ ex
 ```bash
 pip install -m venv .venv
 make install
+make refactor
 ```
+
+## intro
+
+This repo is a `sandbox` inspired by 
+
+https://www.udemy.com/course/data-structures-algorithms-python/
+
+![alt text](b80fbdfb-c570-4323-a2ae-69ad009f07a0.png)
+and 
+
+`Algorithms + Data Structures = Programs`, 1976 book written by Niklaus Wirth covering some of the fundamental topics of system engineering, computer programming, particularly that algorithms and data structures are inherently related.
+
+![alt text](Algorithms_+_Data_Structures.jpg)
+
+ 
+## what `:wip:`
+
+here we can add notebooks for a few data structures:
+
+Linked Lists
+Doubly Linked Lists
+Stacks & Queues
+Trees
+<> BST
+Hash Tables
+Graphs
+Heaps
+Recursion
+Recursive Binary Search Trees
+<> rBST
+Tree Traversal
+<> BST Traversal
+Basic Sorts
+Merge Sort
+Quick Sort
