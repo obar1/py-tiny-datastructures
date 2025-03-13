@@ -5,6 +5,7 @@ black
 ipython
 pyyaml
 mypy
+black[jupyter]
 
 ## notebook
 nbval
@@ -15,7 +16,4 @@ jupyter
 ipytest
 ipynb
 
-# api
-fastapi
-uvicorn
-httpx
+
