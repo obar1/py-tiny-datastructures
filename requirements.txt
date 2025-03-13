@@ -12,6 +12,7 @@ pandas
 seaborn
 plotly
 jupyter
+ipytest
 
 # api
 fastapi

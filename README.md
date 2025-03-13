@@ -32,7 +32,8 @@ and
 
 here we can add notebooks for a few data structures:
 
-Linked Lists
+[Node](node/readme.md)
+[Linked Lists](linked-lists/readme.md)
 Doubly Linked Lists
 Stacks & Queues
 Trees
