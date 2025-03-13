@@ -36,8 +36,7 @@ here we can add notebooks for a few data structures:
 - [Node](node/node.ipynb)
 - [Linked Lists](linked-lists/linked-lists.ipynb)
 - [Doubly Linked Lists](doubly-linked-lists/doubly-linked-lists.ipynb)
-
-Stacks & Queues
+- [Stacks & Queues](stacks-queues/stacks-queues.ipynb)
 Trees
 <> BST
 Hash Tables
