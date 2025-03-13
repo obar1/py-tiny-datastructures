@@ -13,6 +13,7 @@ seaborn
 plotly
 jupyter
 ipytest
+ipynb
 
 # api
 fastapi
