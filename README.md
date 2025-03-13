@@ -33,8 +33,8 @@ and
 
 here we can add notebooks for a few data structures:
 
-[Node](node/readme.md)
-[Linked Lists](linked-lists/readme.md)
+[Node](node/node.ipynb)
+[Linked Lists](linked-lists/linked-lists.ipynb)
 Doubly Linked Lists
 Stacks & Queues
 Trees
