@@ -2,17 +2,13 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt 
 
 test:
-	python -m pytest lib/tests/test_*.py 
-	ls  node/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
-	ls  linked-lists/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
+	find . -maxdepth 2 -type f -name "*.ipynb" | xargs -I {} bash -c "py.test --nbval-lax '{}'"
 
 format:
-	black lib
+	find . -maxdepth 2 -type f -name "*.ipynb" | xargs -I {} bash -c "black '{}'"
 
-lint:
-	pylint --disable=R,C,W0702,W0621,W1203 lib
 
-refactor: format lint test
+refactor: format test
 
 jupyter9:
 	jupyter notebook
