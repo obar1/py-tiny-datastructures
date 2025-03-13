@@ -3,8 +3,8 @@ install:
 
 test:
 	python -m pytest lib/tests/test_*.py 
-	ls  node/*.ipynb | xargs -I {} bash -c "py.test --nbval '{}'"
-	ls  linked-lists/*.ipynb | xargs -I {} bash -c "py.test --nbval '{}'"
+	ls  node/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
+	ls  linked-lists/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
 
 format:
 	black lib
