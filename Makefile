@@ -7,7 +7,6 @@ test:
 format:
 	find . -maxdepth 2 -type f -name "*.ipynb" | xargs -I {} bash -c "black '{}'"
 
-
 refactor: format test
 
 jupyter9:
