@@ -1,9 +1,10 @@
 install:
-	pip install --upgrade pip && pip install -r requirements.txt
+	pip install --upgrade pip && pip install -r requirements.txt 
 
 test:
-	python -m pytest lib/tests/test_*.py
-	python -m pytest -vv --nbval-lax *.ipynb
+	python -m pytest lib/tests/test_*.py 
+	ls  node/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
+	ls  linked-lists/*.ipynb | xargs -I {} bash -c "py.test --nbval-lax '{}'"
 
 format:
 	black lib

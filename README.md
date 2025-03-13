@@ -14,6 +14,7 @@ make install
 make refactor
 ```
 
+
 ## intro
 
 This repo is a `sandbox` inspired by 
@@ -32,7 +33,8 @@ and
 
 here we can add notebooks for a few data structures:
 
-Linked Lists
+[Node](node/node.ipynb)
+[Linked Lists](linked-lists/linked-lists.ipynb)
 Doubly Linked Lists
 Stacks & Queues
 Trees
