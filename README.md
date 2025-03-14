@@ -40,8 +40,8 @@ here we can add notebooks for a few data structures:
 - [Trees](trees/trees.ipynb)
 - [Hash Tables](hash-tables/hash-tables.ipynb)
 - [Graphs](graphs/graphs.ipynb)
+- [Heaps](heaps/heaps.ipynb)
 
-Heaps
 Recursion
 Recursive Binary Search Trees
 <> rBST
