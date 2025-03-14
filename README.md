@@ -59,3 +59,10 @@ Quick Sort
 > use duckdb to record perforances and comapare performance of the various data structures
 
 - [Has Performance](has-performance/has-performance.ipynb)
+
+and use it for the data structures to compare some performances :)
+- [Has Performance Doubly Linked Lists](has-performance/hp-doubly-linked-lists.ipynb)
+- [Has Performance Heaps](has-performance/hp-heaps.ipynb)
+
+and comapre them
+- [Has Performance Test 000](has-performance/has-performance-test-000.ipynb)
