@@ -33,7 +33,7 @@ and
 
 here we can add notebooks for a few data structures:
 
-- [Node](node/node.ipynb)
+- [Node](node/readme.md) 
 - [Linked Lists](linked-lists/linked-lists.ipynb)
 - [Doubly Linked Lists](doubly-linked-lists/doubly-linked-lists.ipynb)
 - [Stacks & Queues](stacks-queues/stacks-queues.ipynb)
@@ -41,12 +41,12 @@ here we can add notebooks for a few data structures:
 - [Hash Tables](hash-tables/hash-tables.ipynb)
 - [Graphs](graphs/graphs.ipynb)
 - [Heaps](heaps/heaps.ipynb)
+- [Recursion](recursion/recursion.ipynb)
+- [Recursive Binary Search Trees](recursive-binary-search-trees/recursive-binary-search-trees.ipynb)
+- [Tree Traversal](tree-traversal/tree-traversal.ipynb)
+ 
 
-Recursion
-Recursive Binary Search Trees
-<> rBST
-Tree Traversal
-<> BST Traversal
+ 
 Basic Sorts
 Merge Sort
 Quick Sort
