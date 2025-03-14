@@ -15,5 +15,5 @@ plotly
 jupyter
 ipytest
 ipynb
-
+mermaid-py
 
