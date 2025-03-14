@@ -13,11 +13,11 @@ jobs:
     - name: install packages
       run: make install
 
-    - name: test
-      run: make test
-
     - name: format
       run: make format
+
+    - name: test
+      run: make test_int  
 
     - name: List files in the repository
       run: |
