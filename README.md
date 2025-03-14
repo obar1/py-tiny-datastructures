@@ -60,9 +60,5 @@ Quick Sort
 
 - [Has Performance](has-performance/has-performance.ipynb)
 
-and use it for the data structures to compare some performances :)
-- [Has Performance Doubly Linked Lists](has-performance/hp-doubly-linked-lists.ipynb)
-- [Has Performance Heaps](has-performance/hp-heaps.ipynb)
-
-and comapre them
+and use it for the data structures to do some `basic` performances comparison
 - [Has Performance Test 000](has-performance/has-performance-test-000.ipynb)
