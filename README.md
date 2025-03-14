@@ -4,6 +4,8 @@
 
 py tiny data structures
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/obar1/py-tiny-datastructures?quickstart=1)
+
 ## init
 
 use make
@@ -46,7 +48,17 @@ here we can add notebooks for a few data structures:
 - [Tree Traversal](tree-traversal/tree-traversal.ipynb)
  
 
- 
+```
 Basic Sorts
 Merge Sort
 Quick Sort
+```
+
+## performance
+
+> use duckdb to record perforances and comapare performance of the various data structures
+
+- [Has Performance](has-performance/has-performance.ipynb)
+
+and use it for the data structures to do some `basic` performances comparison
+- [Has Performance Test 000](has-performance/has-performance-test-000.ipynb)
