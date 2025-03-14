@@ -37,11 +37,11 @@ here we can add notebooks for a few data structures:
 - [Linked Lists](linked-lists/linked-lists.ipynb)
 - [Doubly Linked Lists](doubly-linked-lists/doubly-linked-lists.ipynb)
 - [Stacks & Queues](stacks-queues/stacks-queues.ipynb)
-Trees
-<> BST
-Hash Tables
-Graphs
-Heaps
+- [Trees](trees/trees.ipynb)
+- [Hash Tables](hash-tables/hash-tables.ipynb)
+- [Graphs](graphs/graphs.ipynb)
+- [Heaps](heaps/heaps.ipynb)
+
 Recursion
 Recursive Binary Search Trees
 <> rBST
