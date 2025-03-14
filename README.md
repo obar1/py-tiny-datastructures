@@ -39,8 +39,8 @@ here we can add notebooks for a few data structures:
 - [Stacks & Queues](stacks-queues/stacks-queues.ipynb)
 - [Trees](trees/trees.ipynb)
 - [Hash Tables](hash-tables/hash-tables.ipynb)
+- [Graphs](graphs/graphs.ipynb)
 
-Graphs
 Heaps
 Recursion
 Recursive Binary Search Trees
