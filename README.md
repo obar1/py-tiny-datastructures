@@ -38,9 +38,8 @@ here we can add notebooks for a few data structures:
 - [Doubly Linked Lists](doubly-linked-lists/doubly-linked-lists.ipynb)
 - [Stacks & Queues](stacks-queues/stacks-queues.ipynb)
 - [Trees](trees/trees.ipynb)
+- [Hash Tables](hash-tables/hash-tables.ipynb)
 
-
-Hash Tables
 Graphs
 Heaps
 Recursion
