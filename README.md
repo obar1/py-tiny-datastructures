@@ -46,7 +46,14 @@ here we can add notebooks for a few data structures:
 - [Tree Traversal](tree-traversal/tree-traversal.ipynb)
  
 
- 
+```
 Basic Sorts
 Merge Sort
 Quick Sort
+```
+
+## performance
+
+> use duckdb to record perforances and comapare performance of the various data structures
+
+- [Has Performance](has-performance/has-performance.ipynb)

@@ -16,4 +16,5 @@ jupyter
 ipytest
 ipynb
 mermaid-py
+duckdb
 
