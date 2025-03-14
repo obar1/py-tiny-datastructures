@@ -4,10 +4,7 @@
 
 py tiny data structures
 
-| SQ | CI |                                                                                                         
-| -- | -- | 
-| [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=py-tiny-datastructures)](https://sonarcloud.io/summary/new_code?id=py-tiny-datastructures) | [![Makefile CI](https://github.com/obar1/py-tiny-datastructures/actions/workflows/makefile.yml/badge.svg)](https://github.com/obar1/py-tiny-datastructures/actions/workflows/makefile.yml) | 
-
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/obar1/py-tiny-datastructures?quickstart=1)
 
 ## init
 
