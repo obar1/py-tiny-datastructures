@@ -17,7 +17,7 @@ jobs:
       run: make format
 
     - name: test
-      run: make test_int  
+      run: make test  
 
     - name: List files in the repository
       run: |
