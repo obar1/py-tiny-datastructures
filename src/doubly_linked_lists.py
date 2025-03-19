@@ -1,8 +1,8 @@
-import sys, os
+import sys
+import os
+from src.node import Node
 
 sys.path.append(os.path.abspath("."))
-
-from src.node import Node
 
 
 class DoublyLinkedList:

@@ -1,14 +1,5 @@
-import ipytest
-import pytest
-
-
 def test_h(get_mh):
     assert str(get_mh) == "mh:[]"
-
-
-# ---
-
-##%%ipytest -vv
 
 
 def test_insert(get_mh):
@@ -29,11 +20,6 @@ def test_insert(get_mh):
         str(get_mh)
         == "mh:[(0, ': ', 100), (1, ': ', 99), (2, ': ', 75), (3, ': ', 58), (4, ': ', 72), (5, ': ', 61)]"
     )
-
-
-# ---
-
-##%%ipytest -vv
 
 
 def test_remove(get_mh):

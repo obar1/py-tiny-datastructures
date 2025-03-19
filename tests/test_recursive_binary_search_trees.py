@@ -1,12 +1,3 @@
-import ipytest
-import pytest
-
-
-# ---
-
-##%%ipytest
-
-
 def test_r_contains(get_r_bst):
     get_r_bst.insert(47)
     get_r_bst.insert(21)
@@ -17,12 +8,7 @@ def test_r_contains(get_r_bst):
     get_r_bst.insert(82)
 
     assert get_r_bst.r_contains(27)
-    assert get_r_bst.r_contains(17) == False
-
-
-# ---
-
-##%%ipytest
+    assert get_r_bst.r_contains(17) is False
 
 
 def test_ops0(get_r_bst):
@@ -33,11 +19,6 @@ def test_ops0(get_r_bst):
     assert (str(get_r_bst.root)) == "node:2"
     assert (str(get_r_bst.root.left)) == "node:1"
     assert (str(get_r_bst.root.right)) == "node:3"
-
-
-# ---
-
-##%%ipytest
 
 
 def test_ops2(get_r_bst):

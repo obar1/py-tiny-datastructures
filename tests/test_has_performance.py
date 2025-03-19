@@ -1,8 +1,3 @@
-import ipytest
-import duckdb
-import pytest
-
-
 def test(get_hp):
     get_hp.save("abc")
     get_hp.save("efg")

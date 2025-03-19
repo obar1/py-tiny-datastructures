@@ -1,6 +1,4 @@
-import ipytest
 import duckdb
-import pytest
 
 
 class HasPerformance:
@@ -13,7 +11,8 @@ class HasPerformance:
             + "            "
         )
 
-    def save(self, txt: str):
+    def save(self, txt: str) -> None:
+        # pylint: disable=W0104
         (
             "save some txt\n"
             + "\n"

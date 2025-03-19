@@ -66,14 +66,6 @@ class LinkedList:
             self.tail = None
         return temp
 
-    def get(self, index):
-        if index < 0 or index >= self.length:
-            return None
-        temp = self.head
-        for _ in range(index):
-            temp = temp.next
-        return temp
-
     def set_value(self, index, value):
         try:
             tmp = self.get(index)
@@ -82,6 +74,7 @@ class LinkedList:
                 return True
         except:
             return False
+        return False
 
     def get(self, index):
         try:

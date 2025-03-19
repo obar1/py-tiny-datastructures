@@ -19,10 +19,10 @@ class HashTable:
         return f"ht:{list(self.print())}"
 
     def set_item(self, k, v):
-        id = self.__hash(k)
-        if self.data_map[id] is None:
-            self.data_map[id] = []
-        self.data_map[id].append([k, v])
+        guid = self.__hash(k)
+        if self.data_map[guid] is None:
+            self.data_map[guid] = []
+        self.data_map[guid].append([k, v])
         return True
 
     def get_item(self, key):
@@ -35,6 +35,7 @@ class HashTable:
                     return k[1]
         except AssertionError:
             return None
+        return None
 
     def keys(self):
         all_keys = []
@@ -43,6 +44,3 @@ class HashTable:
                 for j in range(len(self.data_map[i])):
                     all_keys.append(self.data_map[i][j][0])
         return all_keys
-
-
-# ---

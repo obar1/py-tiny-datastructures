@@ -1,8 +1,6 @@
-import ipytest
-import pytest
-
-
 class Graph:
+    # pylint: disable=C0201,C0206
+
     def __init__(self):
         self.adj_list = {}
 
@@ -35,6 +33,3 @@ class Graph:
             del self.adj_list[vertex]
             return True
         return False
-
-
-# ---

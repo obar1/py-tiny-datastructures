@@ -10,7 +10,7 @@ class BinarySearchTree:
         self.root = None
 
     def __r_insert(self, current_node, value):
-        if current_node == None:
+        if current_node is None:
             return Node(value)
         if value < current_node.value:
             current_node.left = self.__r_insert(current_node.left, value)
@@ -19,7 +19,7 @@ class BinarySearchTree:
         return current_node
 
     def insert(self, value):
-        if self.root == None:
+        if self.root is None:
             self.root = Node(value)
         self.__r_insert(self.root, value)
 
@@ -35,7 +35,7 @@ class BinarySearchTree:
         return False
 
     def __r_contains(self, current_node, value):
-        if current_node == None:
+        if current_node is None:
             return False
         if value == current_node.value:
             return True
@@ -43,6 +43,7 @@ class BinarySearchTree:
             return self.__r_contains(current_node.left, value)
         if value > current_node.value:
             return self.__r_contains(current_node.right, value)
+        return False
 
     def r_contains(self, value):
         return self.__r_contains(self.root, value)

@@ -1,21 +1,8 @@
-from typing import List
-
-
-# ---
-
-##%%ipytest
-
-
 def test_ht0(get_ht):
     assert (
         str(get_ht)
         == "ht:[(0, ': ', None), (1, ': ', None), (2, ': ', None), (3, ': ', None), (4, ': ', None), (5, ': ', None), (6, ': ', None)]"
     )
-
-
-# ---
-
-##%%ipytest
 
 
 def test_ht(get_ht):
@@ -28,11 +15,6 @@ def test_ht(get_ht):
     )
 
 
-# ---
-
-##%%ipytest -vv
-
-
 def test_set_item(get_ht):
     get_ht.set_item("bolts", 1400)
     get_ht.set_item("washers", 50)
@@ -40,11 +22,6 @@ def test_set_item(get_ht):
     assert "1400" == str(get_ht.get_item("bolts"))
     assert "50" == str(get_ht.get_item("washers"))
     assert "None" == str(get_ht.get_item("lumber"))
-
-
-# ---
-
-##%%ipytest -vv
 
 
 def test_keys(get_ht):
