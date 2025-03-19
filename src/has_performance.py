@@ -1,4 +1,6 @@
 import duckdb
+
+
 class HasPerformance:
     def __init__(self):
         self.con = duckdb.connect(":memory:")
@@ -8,6 +10,7 @@ class HasPerformance:
             + "            CREATE TABLE tbl (id INTEGER DEFAULT nextval('id_sequence'), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, s VARCHAR);\n"
             + "            "
         )
+
     def save(self, txt: str) -> None:
         # pylint: disable=W0104
         (

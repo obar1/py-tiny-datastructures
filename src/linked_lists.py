@@ -1,21 +1,27 @@
 from src.a_ds import ADS
 from src.node import Node
+
+
 class LinkedList(ADS):
     @property
     def get_id(self):
         return "linked-list"
+
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
         self.length = 1
+
     def print_list(self):
         temp = self.head
         while temp is not None:
             yield str(temp) + ","
             temp = temp.next
+
     def __repr__(self):
         return f"ll:{list(self.print_list())}"
+
     def append(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -26,6 +32,7 @@ class LinkedList(ADS):
             self.tail = new_node
         self.length += 1
         return True
+
     def pop(self):
         if self.length == 0:
             return None
@@ -41,6 +48,7 @@ class LinkedList(ADS):
             self.head = None
             self.tail = None
         return temp
+
     def prepend(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -51,6 +59,7 @@ class LinkedList(ADS):
             self.head = new_node
         self.length += 1
         return True
+
     def pop_first(self):
         if self.length == 0:
             return None
@@ -61,6 +70,7 @@ class LinkedList(ADS):
         if self.length == 0:
             self.tail = None
         return temp
+
     def set_value(self, index, value):
         try:
             tmp = self.get(index)
@@ -70,6 +80,7 @@ class LinkedList(ADS):
         except:
             return False
         return False
+
     def get(self, index):
         try:
             assert 0 <= index <= self.length - 1

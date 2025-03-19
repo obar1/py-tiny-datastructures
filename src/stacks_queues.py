@@ -1,21 +1,27 @@
 from src.a_ds import ADS
 from src.node import Node
+
+
 class Stack(ADS):
     @property
     def get_id(self):
         return "stack"
+
     def __init__(self, value):
         new_node = Node(value)
         self.top = new_node
         self.height = 1
+
     def _ger_repr(self):
         yield f"top:{self.top},"
         temp = self.top
         while temp is not None:
             yield str(temp) + ","
             temp = temp.next
+
     def __repr__(self):
         return f"s:{list(self._ger_repr())}"
+
     def push(self, value):
         new_node = Node(value)
         try:
@@ -26,6 +32,7 @@ class Stack(ADS):
             self.top = new_node
         finally:
             self.height += 1
+
     def pop(self):
         try:
             assert self.top
@@ -37,14 +44,18 @@ class Stack(ADS):
             return None
         finally:
             self.height -= 1
+
+
 class Queue(ADS):
     @property
     def get_id(self):
         return "queue"
+
     def __init__(self, value):
         nn = Node(value)
         self.first = self.last = nn
         self.length = 1
+
     def print_list(self):
         yield f"first:{self.first},"
         temp = self.first
@@ -52,8 +63,10 @@ class Queue(ADS):
             yield str(temp) + ","
             temp = temp.next
         yield f"last:{self.last},"
+
     def __repr__(self):
         return f"q:{list(self.print_list())}"
+
     def enqueue(self, value):
         nn = Node(value)
         try:
@@ -65,6 +78,7 @@ class Queue(ADS):
             self.last = nn
         finally:
             self.length += 1
+
     def dequeue(self):
         tmp = self.first
         try:

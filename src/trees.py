@@ -1,11 +1,15 @@
 from src.a_ds import ADS
 from src.node_lr import NodeLR as Node
+
+
 class BinarySearchTree(ADS):
     @property
     def get_id(self):
         return "binary-search-tree"
+
     def __init__(self):
         self.root = None
+
     def insert(self, value):
         new_node = Node(value)
         if self.root is None:
@@ -25,6 +29,7 @@ class BinarySearchTree(ADS):
                     temp.right = new_node
                     return True
                 temp = temp.right
+
     def contains(self, value):
         temp = self.root
         while temp is not None:

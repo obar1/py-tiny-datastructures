@@ -2,23 +2,30 @@ import sys
 import os
 from src.a_ds import ADS
 from src.node_p import NodeP as Node
+
 sys.path.append(os.path.abspath("."))
+
+
 class DoublyLinkedList(ADS):
     @property
     def get_id(self):
         return "doubly-linked-list"
+
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node
         self.tail = new_node
         self.length = 1
+
     def print_list(self):
         temp = self.head
         while temp is not None:
             yield str(temp) + ","
             temp = temp.next
+
     def __repr__(self):
         return f"dll:{list(self.print_list())}"
+
     def append(self, value):
         new_node = Node(value)
         if self.head is None:
@@ -30,6 +37,7 @@ class DoublyLinkedList(ADS):
             self.tail = new_node
         self.length += 1
         return True
+
     def pop(self):
         if self.length == 0:
             return None
@@ -43,6 +51,7 @@ class DoublyLinkedList(ADS):
             temp.prev = None
         self.length -= 1
         return temp
+
     def prepend(self, value):
         new_node = Node(value)
         if self.length == 0:
@@ -54,6 +63,7 @@ class DoublyLinkedList(ADS):
             self.head = new_node
         self.length += 1
         return True
+
     def pop_first(self):
         if self.length == 0:
             return None
@@ -67,6 +77,7 @@ class DoublyLinkedList(ADS):
             temp.next = None
         self.length -= 1
         return temp
+
     def get(self, index):
         if index < 0 or index >= self.length:
             return None
@@ -79,12 +90,14 @@ class DoublyLinkedList(ADS):
             for _ in range(self.length - 1, index, -1):
                 temp = temp.prev
         return temp
+
     def set_value(self, index, value):
         temp = self.get(index)
         if temp:
             temp.value = value
             return True
         return False
+
     def insert(self, index, value):
         if index < 0 or index > self.length:
             return False
@@ -101,6 +114,7 @@ class DoublyLinkedList(ADS):
         after.prev = new_node
         self.length += 1
         return True
+
     def remove(self, index):
         prev = self.get(index - 1)
         temp = self.get(index)

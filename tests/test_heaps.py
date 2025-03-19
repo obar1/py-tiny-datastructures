@@ -1,8 +1,12 @@
 def test_ds(get_mh):
     assert set(["insert", "remove"]).issubset(get_mh.ds_func)
+
+
 def test_constrcutor(get_mh):
     assert get_mh.get_id == "max-heap"
     assert str(get_mh) == "mh:[]"
+
+
 def test_insert(get_mh):
     get_mh.insert(99)
     get_mh.insert(72)
@@ -21,6 +25,8 @@ def test_insert(get_mh):
         str(get_mh)
         == "mh:[(0, ': ', 100), (1, ': ', 99), (2, ': ', 75), (3, ': ', 58), (4, ': ', 72), (5, ': ', 61)]"
     )
+
+
 def test_remove(get_mh):
     for i in [95, 75, 80, 55, 60, 50, 65]:
         get_mh.insert(i)

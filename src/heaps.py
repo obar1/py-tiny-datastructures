@@ -1,29 +1,40 @@
 from src.a_ds import ADS
+
+
 class MaxHeap(ADS):
     @property
     def get_id(self):
         return "max-heap"
+
     def __init__(self):
         self.heap = []
+
     def print(self):
         for i, val in enumerate(self.heap):
             yield (i, ": ", val)
+
     def __repr__(self):
         return f"mh:{list(self.print())}"
+
     def _left_child(self, index):
         return 2 * index + 1
+
     def _right_child(self, index):
         return 2 * index + 2
+
     def _parent(self, index):
         return (index - 1) // 2
+
     def _swap(self, index1, index2):
         self.heap[index1], self.heap[index2] = self.heap[index2], self.heap[index1]
+
     def insert(self, value):
         self.heap.append(value)
         current = len(self.heap) - 1
         while current > 0 and self.heap[current] > self.heap[self._parent(current)]:
             self._swap(current, self._parent(current))
             current = self._parent(current)
+
     def _sink_down(self, index):
         max_index = index
         while True:
@@ -44,6 +55,7 @@ class MaxHeap(ADS):
                 index = max_index
             else:
                 return
+
     def remove(self):
         if len(self.heap) == 0:
             return None

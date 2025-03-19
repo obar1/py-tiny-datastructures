@@ -3,5 +3,6 @@ class NodeLR:
         self.value = value
         self.left = None
         self.right = None
+
     def __str__(self):
         return f"node:{self.value}"
