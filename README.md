@@ -19,7 +19,8 @@ and
 ![alt text](Algorithms_+_Data_Structures.jpg)
  
 ## what `:wip:`
-### data strrcutures 
+
+### data structures 
 here we can add notebooks for a few data structures:
 - [Linked Lists](nb-ds/linked-lists.ipynb)
 - [Doubly Linked Lists](nb-ds/doubly-linked-lists.ipynb)
@@ -36,6 +37,7 @@ here we can add notebooks for a few data structures:
 > use duckdb to record perforances and comapare performance of the various data structures
 to do some `basic` performances comparison
 - [Has Performance Test 000](nb-experiments/has-performance-test-000.ipynb)
+
 ### TODO:
 ```
 Basic Sorts
