@@ -1,9 +1,7 @@
- 
-from  src.node_lr import NodeLR as Node
+from src.node_lr import NodeLR as Node
 
- 
+
 class BinarySearchTree:
-
     @property
     def id(self):
         return "binary search tree"
@@ -88,5 +86,3 @@ class BinarySearchTree:
 
     def delete_node(self, value):
         self.root = self._delete_recursive(self.root, value)
-
- 

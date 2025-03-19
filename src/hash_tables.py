@@ -1,6 +1,6 @@
 from typing import List
-  
-    
+
+
 class HashTable:
     def __init__(self, size=7):
         self.data_map = [None] * size
@@ -44,7 +44,5 @@ class HashTable:
                     all_keys.append(self.data_map[i][j][0])
         return all_keys
 
-#---
 
-
- 
+# ---

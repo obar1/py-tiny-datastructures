@@ -1,7 +1,5 @@
- 
-from  src.recursive_binary_search_trees import BinarySearchTree
+from src.recursive_binary_search_trees import BinarySearchTree
 
- 
 
 class BinarySearchTreeTraversal(BinarySearchTree):
     def bfs(self):
@@ -58,5 +56,3 @@ class BinarySearchTreeTraversal(BinarySearchTree):
 
         traverse(self.root)
         return results
-
- 

@@ -1,5 +1,3 @@
-
-
 class MaxHeap:
     @property
     def id(self):
@@ -70,5 +68,3 @@ class MaxHeap:
         self._sink_down(0)
 
         return max_value
-
-    

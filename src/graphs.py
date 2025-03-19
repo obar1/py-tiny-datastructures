@@ -1,7 +1,7 @@
 import ipytest
 import pytest
 
- 
+
 class Graph:
     def __init__(self):
         self.adj_list = {}
@@ -36,6 +36,5 @@ class Graph:
             return True
         return False
 
-#---
 
-    
+# ---

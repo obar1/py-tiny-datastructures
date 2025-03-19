@@ -1,5 +1,4 @@
-
-from  src.node_lr import NodeLR as Node
+from src.node_lr import NodeLR as Node
 
 
 class BinarySearchTree:
@@ -36,5 +35,3 @@ class BinarySearchTree:
             else:
                 return True
         return False
-
- 

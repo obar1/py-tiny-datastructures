@@ -2,7 +2,7 @@ import ipytest
 import pytest
 import pytest
 
-from  src.node import Node
+from src.node import Node
 
 
 class Stack:
@@ -44,8 +44,8 @@ class Stack:
         finally:
             self.height -= 1
 
-#---
 
+# ---
 
 
 class Queue:

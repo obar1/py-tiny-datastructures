@@ -1,8 +1,11 @@
-from  src.node import Node
+import sys, os
+
+sys.path.append(os.path.abspath("."))
+
+from src.node import Node
 
 
 class DoublyLinkedList:
-
     @property
     def id(self):
         return "doubly linked list"

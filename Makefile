@@ -5,6 +5,7 @@ PYTHON := python3
 VENV := venv
 BIN := $(VENV)/bin
 SRC_DIR := src
+NB_DIR := nb-ds
 TEST_DIR := tests
 
 help:
@@ -42,6 +43,7 @@ type-check:
 	$(BIN)/mypy $(SRC_DIR) $(TEST_DIR)
 
 format:
-	$(BIN)/black $(SRC_DIR) $(TEST_DIR)
+	$(BIN)/black $(SRC_DIR) $(TEST_DIR) $(NB_DIR)
+ 
 
 check-all: format lint type-check test 
