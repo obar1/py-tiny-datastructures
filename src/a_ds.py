@@ -8,4 +8,4 @@ class ADS(ABC):
 
     @property
     def ds_func(self):
-        return set(self.__class__.__dict__)
+        return {x for x in self.__class__.__dict__ if not str(x).startswith("_")}

@@ -18,7 +18,7 @@ help:
 	@echo "  make lint         - Run pylint"
 	@echo "  make type-check   - Run mypy type checking"
 	@echo "  make format       - Format code with black"
-	@echo "  make check-all    - Run all checks (lint, type-check, test)"
+	@echo "  make refactor     - Run all checks"
 
 setup:
 	$(PYTHON) -m venv $(VENV)
@@ -46,4 +46,4 @@ format:
 	$(BIN)/black $(SRC_DIR) $(TEST_DIR) $(NB_DIR)
  
 
-check-all: format lint type-check test 
+refactor: format lint type-check test 
