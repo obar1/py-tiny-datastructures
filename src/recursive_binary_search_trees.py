@@ -1,5 +1,5 @@
 from src.a_ds import ADS
-from src.node_lr import NodeLR as Node
+from src.nodes import NodeLR as Node
 
 
 class BinarySearchTree(ADS):

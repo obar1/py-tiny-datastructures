@@ -1,7 +1,7 @@
 import sys
 import os
 from src.a_ds import ADS
-from src.node_p import NodeP as Node
+from src.nodes import NodeP as Node
 
 sys.path.append(os.path.abspath("."))
 
