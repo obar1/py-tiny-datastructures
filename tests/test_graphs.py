@@ -1,4 +1,9 @@
+def test_ds(get_g):
+    assert set(["add_vertex", "add_edge", "remove_vertex"]).issubset(get_g.ds_func)
+
+
 def test_g(get_g):
+    assert get_g.get_id == "graph"
     assert str(get_g) == "g:[]"
 
 

@@ -1,4 +1,9 @@
-def test(get_bst):
+def test_ds(get_bst):
+    assert set(["insert", "contains"]).issubset(get_bst.ds_func)
+
+
+def test_constrcutor(get_bst):
+    assert get_bst.get_id == "binary-search-tree"
     assert get_bst.root is None
 
 

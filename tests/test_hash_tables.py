@@ -1,4 +1,9 @@
-def test_ht0(get_ht):
+def test_ds(get_ht):
+    assert set(["set_item", "keys"]).issubset(get_ht.ds_func)
+
+
+def test_constrcutor(get_ht):
+    assert get_ht.get_id == "hash-table"
     assert (
         str(get_ht)
         == "ht:[(0, ': ', None), (1, ': ', None), (2, ': ', None), (3, ': ', None), (4, ': ', None), (5, ': ', None), (6, ': ', None)]"

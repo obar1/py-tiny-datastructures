@@ -1,7 +1,12 @@
+from src.a_ds import ADS
 from src.node import Node
 
 
-class LinkedList:
+class LinkedList(ADS):
+    @property
+    def get_id(self):
+        return "linked-list"
+
     def __init__(self, value):
         new_node = Node(value)
         self.head = new_node

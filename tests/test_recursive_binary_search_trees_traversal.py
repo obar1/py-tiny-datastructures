@@ -1,3 +1,13 @@
+def test_ds(get_r_bst_t):
+    assert set(["bfs", "dfs_pre_order", "dfs_post_order", "dfs_in_order"]).issubset(
+        get_r_bst_t.ds_func
+    )
+
+
+def test_constrcutor(get_r_bst_t):
+    assert get_r_bst_t.get_id == "binary-search-tree"
+
+
 def test_bfs(get_r_bst_t):
     assert str(get_r_bst_t.bfs()) == "[47, 21, 76, 18, 27, 52, 82]"
 

@@ -1,4 +1,11 @@
-def test_ll(get_ll):
+def test_ds(get_ll):
+    assert set(["append", "pop", "prepend", "get", "set_value"]).issubset(
+        get_ll.ds_func
+    )
+
+
+def test_constrcutor(get_ll):
+    assert get_ll.get_id == "linked-list"
     assert get_ll.head is not None
     assert get_ll.tail is not None
     assert get_ll.length == 1

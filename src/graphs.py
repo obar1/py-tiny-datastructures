@@ -1,4 +1,11 @@
-class Graph:
+from src.a_ds import ADS
+
+
+class Graph(ADS):
+    @property
+    def get_id(self):
+        return "graph"
+
     # pylint: disable=C0201,C0206
 
     def __init__(self):
