@@ -1,14 +1,15 @@
 import sys
 import os
+from src.a_ds import ADS
 from src.node import Node
 
 sys.path.append(os.path.abspath("."))
 
 
-class DoublyLinkedList:
+class DoublyLinkedList(ADS):
     @property
-    def id(self):
-        return "doubly linked list"
+    def get_id(self):
+        return "doubly-linked-list"
 
     def __init__(self, value):
         new_node = Node(value)

@@ -1,10 +1,11 @@
+from src.a_ds import ADS
 from src.node_lr import NodeLR as Node
 
 
-class BinarySearchTree:
+class BinarySearchTree(ADS):
     @property
-    def id(self):
-        return "binary search tree"
+    def get_id(self):
+        return "binary-search-tree"
 
     def __init__(self):
         self.root = None

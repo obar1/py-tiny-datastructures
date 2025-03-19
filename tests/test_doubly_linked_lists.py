@@ -1,4 +1,11 @@
+def test_ds(get_dll):
+    assert set(["append", "pop", "prepend", "insert", "remove"]).issubset(
+        get_dll.ds_func
+    )
+
+
 def test_consturctor(get_dll):
+    assert get_dll.get_id == "doubly-linked-list"
     assert get_dll.head is not None
     assert get_dll.tail is not None
     assert get_dll.length == 1

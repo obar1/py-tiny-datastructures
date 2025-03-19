@@ -1,4 +1,9 @@
-def test_h(get_mh):
+def test_ds(get_mh):
+    assert set(["insert", "remove"]).issubset(get_mh.ds_func)
+
+
+def test_constrcutor(get_mh):
+    assert get_mh.get_id == "max-heap"
     assert str(get_mh) == "mh:[]"
 
 

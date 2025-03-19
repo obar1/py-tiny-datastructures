@@ -1,4 +1,5 @@
-def test(get_bst):
+def test_constrcutor(get_bst):
+    assert get_bst.get_id == "binary-search-tree"
     assert get_bst.root is None
 
 

@@ -1,3 +1,11 @@
+def test_ds(get_r_bst):
+    assert set(["insert", "r_contains", "delete_node"]).issubset(get_r_bst.ds_func)
+
+
+def test_constrcutor(get_r_bst_t):
+    assert get_r_bst_t.get_id == "binary-search-tree"
+
+
 def test_r_contains(get_r_bst):
     get_r_bst.insert(47)
     get_r_bst.insert(21)

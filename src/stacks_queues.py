@@ -1,7 +1,12 @@
+from src.a_ds import ADS
 from src.node import Node
 
 
-class Stack:
+class Stack(ADS):
+    @property
+    def get_id(self):
+        return "stack"
+
     def __init__(self, value):
         new_node = Node(value)
         self.top = new_node
@@ -41,7 +46,11 @@ class Stack:
             self.height -= 1
 
 
-class Queue:
+class Queue(ADS):
+    @property
+    def get_id(self):
+        return "queue"
+
     def __init__(self, value):
         nn = Node(value)
         self.first = self.last = nn

@@ -1,7 +1,10 @@
-class MaxHeap:
+from src.a_ds import ADS
+
+
+class MaxHeap(ADS):
     @property
-    def id(self):
-        return "max heap"
+    def get_id(self):
+        return "max-heap"
 
     def __init__(self):
         self.heap = []

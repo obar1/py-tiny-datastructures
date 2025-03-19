@@ -1,7 +1,13 @@
 from typing import List
 
+from src.a_ds import ADS
 
-class HashTable:
+
+class HashTable(ADS):
+    @property
+    def get_id(self):
+        return "hash-table"
+
     def __init__(self, size=7):
         self.data_map = [None] * size
 
