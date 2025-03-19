@@ -5,8 +5,6 @@ PYTHON := python3
 VENV := venv
 BIN := $(VENV)/bin
 SRC_DIR := src
-NB_DIR0 := nb-ds
-NB_DIR1 := nb-experiments
 TEST_DIR := tests
 
 help:
@@ -44,7 +42,7 @@ type-check:
 	$(BIN)/mypy $(SRC_DIR) $(TEST_DIR)
 
 format:
-	$(BIN)/black $(SRC_DIR) $(TEST_DIR) $(NB_DIR0) $(NB_DIR1)
- 
+	$(BIN)/black $(SRC_DIR) $(TEST_DIR) 
+	find . -maxdepth 2 -type f -name "*.ipynb" | xargs -I {} bash -c "black '{}'"
 
 refactor: format lint type-check test 
