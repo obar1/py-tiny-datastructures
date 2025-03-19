@@ -1,17 +1,11 @@
 def test_ds(get_bst):
     assert set(["insert", "contains"]).issubset(get_bst.ds_func)
-
-
 def test_constrcutor(get_bst):
     assert get_bst.get_id == "binary-search-tree"
     assert get_bst.root is None
-
-
 def test_insert(get_bst):
     get_bst.insert(1)
     assert get_bst.root is not None
-
-
 def test_contains(get_bst):
     get_bst.insert(0)
     get_bst.insert(1)
