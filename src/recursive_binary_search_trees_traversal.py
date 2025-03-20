@@ -7,7 +7,6 @@ class BinarySearchTreeTraversal(BinarySearchTree):
         queue = []
         results = []
         queue.append(current_node)
-
         while len(queue) > 0:
             current_node = queue.pop(0)
             results.append(current_node.value)
@@ -50,7 +49,6 @@ class BinarySearchTreeTraversal(BinarySearchTree):
             if current_node.left is not None:
                 traverse(current_node.left)
             results.append(current_node.value)
-
             if current_node.right is not None:
                 traverse(current_node.right)
 

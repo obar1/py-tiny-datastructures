@@ -7,7 +7,6 @@ class Graph(ADS):
         return "graph"
 
     # pylint: disable=C0201,C0206
-
     def __init__(self):
         self.adj_list = {}
 

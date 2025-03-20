@@ -1,5 +1,5 @@
 from src.a_ds import ADS
-from src.node import Node
+from src.nodes import Node
 
 
 class Stack(ADS):
@@ -88,7 +88,6 @@ class Queue(ADS):
         finally:
             self.length -= 1
         self.first = self.first.next
-
         if self.length == 1:
             self.last = None
         tmp.next = None

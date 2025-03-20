@@ -1,5 +1,5 @@
 from src.a_ds import ADS
-from src.node_lr import NodeLR as Node
+from src.nodes import NodeLR as Node
 
 
 class BinarySearchTree(ADS):
@@ -59,7 +59,6 @@ class BinarySearchTree(ADS):
         # Base case: Empty tree
         if node is None:
             return None
-
         # Find the node to delete
         if value < node.value:
             node.left = self._delete_recursive(node.left, value)
@@ -70,20 +69,16 @@ class BinarySearchTree(ADS):
             # Case 1: No children
             if node.left is None and node.right is None:
                 return None
-
             # Case 2: One child (right child exists)
             if node.left is None:
                 return node.right
-
             # Case 2: One child (left child exists)
             if node.right is None:
                 return node.left
-
             # Case 3: Two children
             min_value = self._find_min(node.right)
             node.value = min_value
             node.right = self._delete_recursive(node.right, min_value)
-
         return node
 
     def delete_node(self, value):
