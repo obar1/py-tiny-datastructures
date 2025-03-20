@@ -8,7 +8,7 @@ ex
 ```bash
 pip install -m venv .venv
 make install
-pre-commit install
+pre-commit install # optional
 # each time new code is ready for PRs :P
 make refactor
 ```
