@@ -1,5 +1,5 @@
 import pytest
-from src.node import Node
+from src.nodes import Node
 from src.nodes import NodeLR
 from src.linked_lists import  LinkedList
 from src.doubly_linked_lists import DoublyLinkedList

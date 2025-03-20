@@ -1,5 +1,5 @@
 from src.a_ds import ADS
-from src.node import Node
+from src.nodes import Node
 
 
 class Stack(ADS):
