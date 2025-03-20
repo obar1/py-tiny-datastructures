@@ -90,3 +90,36 @@ class LinkedList(ADS):
             return tmp
         except:
             return None
+
+
+    def remove(self, index):
+        if index < 0 or index >= self.length:
+            return None
+        if index == 0:
+            return self.pop_first()
+        if index == self.length - 1:
+            return self.pop()
+        pre = self.get(index - 1)
+        temp = pre.next
+        pre.next = temp.next
+        temp.next = None
+        self.length -= 1
+        return temp
+    
+
+    def reverse(self):
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+        after = temp.next
+        before = None
+        for _ in range(self.length):
+        # Instead of the for loop you could use:
+        # while temp is not None:
+        # -- or --
+        # while temp:
+            after = temp.next
+            temp.next = before
+            before = temp
+            temp = after
+
