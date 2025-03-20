@@ -105,13 +105,16 @@ class DoublyLinkedList(ADS):
             return self.prepend(value)
         if index == self.length:
             return self.append(value)
+
         new_node = Node(value)
         before = self.get(index - 1)
         after = before.next
+
         new_node.prev = before
         new_node.next = after
         before.next = new_node
         after.prev = new_node
+
         self.length += 1
         return True
 
@@ -122,14 +125,13 @@ class DoublyLinkedList(ADS):
             return self.pop_first()
         if index == self.length - 1:
             return self.pop()
-    
+
         temp = self.get(index)
-        
+
         temp.next.prev = temp.prev
         temp.prev.next = temp.next
         temp.next = None
         temp.prev = None
-    
+
         self.length -= 1
         return temp
-    

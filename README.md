@@ -8,6 +8,8 @@ ex
 ```bash
 pip install -m venv .venv
 make install
+pre-commit install
+# each time new code is ready for PRs :P
 make refactor
 ```
 ## intro
@@ -18,7 +20,6 @@ and
 `Algorithms + Data Structures = Programs`, 1976 book written by Niklaus Wirth covering some of the fundamental topics of system engineering, computer programming, particularly that algorithms and data structures are inherently related.
 ![alt text](Algorithms_+_Data_Structures.jpg)
  
-## what `:wip:`
 
 ### data structures 
 here we can add notebooks for a few data structures:
@@ -38,7 +39,7 @@ here we can add notebooks for a few data structures:
 to do some `basic` performances comparison
 - [Has Performance Test 000](nb-experiments/has-performance-test-000.ipynb)
 
-### TODO:
+### TODO/WIP:
 ```
 Basic Sorts
 Merge Sort

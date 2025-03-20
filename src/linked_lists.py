@@ -91,7 +91,6 @@ class LinkedList(ADS):
         except:
             return None
 
-
     def remove(self, index):
         if index < 0 or index >= self.length:
             return None
@@ -105,7 +104,6 @@ class LinkedList(ADS):
         temp.next = None
         self.length -= 1
         return temp
-    
 
     def reverse(self):
         temp = self.head
@@ -114,12 +112,7 @@ class LinkedList(ADS):
         after = temp.next
         before = None
         for _ in range(self.length):
-        # Instead of the for loop you could use:
-        # while temp is not None:
-        # -- or --
-        # while temp:
             after = temp.next
             temp.next = before
             before = temp
             temp = after
-

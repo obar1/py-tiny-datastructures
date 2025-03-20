@@ -38,6 +38,7 @@ def test_insert(get_dll):
     get_dll.insert(0, "A")
     assert str(get_dll.get(0)) == "node:A"
 
+
 def test_remove(get_dll):
     get_dll.append(1)
     get_dll.append(2)
@@ -46,4 +47,3 @@ def test_remove(get_dll):
     assert str(get_dll).strip() == "dll:['node:0,', 'node:2,']"
     get_dll.remove(0)
     assert str(get_dll).strip() == "dll:['node:2,']"
-

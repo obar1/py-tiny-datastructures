@@ -2,6 +2,10 @@ from abc import ABC
 
 
 class ADS(ABC):
+    """
+    A generic data structure
+    """
+
     @property
     def get_id(self):
         return "id"
