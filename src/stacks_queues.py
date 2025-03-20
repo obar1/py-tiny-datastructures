@@ -12,7 +12,7 @@ class Stack(ADS):
         self.top = new_node
         self.height = 1
 
-    def _ger_repr(self):
+    def _get_repr(self):
         yield f"top:{self.top},"
         temp = self.top
         while temp is not None:
@@ -20,7 +20,7 @@ class Stack(ADS):
             temp = temp.next
 
     def __repr__(self):
-        return f"s:{list(self._ger_repr())}"
+        return f"s:{list(self._get_repr())}"
 
     def push(self, value):
         new_node = Node(value)
@@ -44,6 +44,43 @@ class Stack(ADS):
             return None
         finally:
             self.height -= 1
+
+
+class StackL(ADS):
+    """Stack with a List"""
+
+    @property
+    def get_id(self):
+        return "stack with list"
+
+    def __init__(self):
+        self.stack_list = []
+
+    def _get_repr(self):
+        for i in range(len(self.stack_list) - 1, -1, -1):
+            yield self.stack_list[i]
+
+    def __repr__(self):
+        return f"s:{list(self._get_repr())}"
+
+    def is_empty(self):
+        return len(self.stack_list) == 0
+
+    def peek(self):
+        if self.is_empty():
+            return None
+        return self.stack_list[-1]
+
+    def size(self):
+        return len(self.stack_list)
+
+    def push(self, value):
+        self.stack_list.append(value)
+
+    def pop(self):
+        if self.is_empty():
+            return None
+        return self.stack_list.pop()
 
 
 class Queue(ADS):
