@@ -3,6 +3,6 @@ repos:
     hooks:
     -   id: make-refactor
         name: Run make-refactor
-        entry: make refactor
+        entry: make refactor VERBOSE=1
         language: system
         pass_filenames: false
