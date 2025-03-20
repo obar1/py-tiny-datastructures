@@ -1,8 +1,8 @@
 repos:
 -   repo: local
     hooks:
-    -   id: pytest
-        name: Run pytest
-        entry: pytest
+    -   id: make-refactor
+        name: Run make-refactor
+        entry: make refactor
         language: system
         pass_filenames: false
