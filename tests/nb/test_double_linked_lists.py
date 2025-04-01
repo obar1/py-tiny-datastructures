@@ -3,7 +3,7 @@ from src.doubly_linked_lists import DoublyLinkedList
 from src.nodes import NodeP as Node
 
 
-def test_swap_firstand_ast():
+def test_swap_first_last():
     """
     # Swap First and Last
 
@@ -50,7 +50,7 @@ def test_swap_firstand_ast():
     )
 
 
-def test_reserve():
+def test_reverse():
     """
 
 
@@ -93,7 +93,7 @@ def test_reserve():
     )
 
 
-def test_palindrome_checker():
+def test_palindrome():
     """
 
 
