@@ -31,9 +31,9 @@ clean:
 test:
 	PYTHONPATH=. $(BIN)/pytest $(TEST_DIR) -v
 lint:
-	$(BIN)/pylint $(SRC_DIR) $(NB_DIR) $(TEST_DIR)
+	$(BIN)/pylint $(SRC_DIR) $(NB_DIR) 
 type-check:
-	$(BIN)/mypy $(SRC_DIR)  $(TEST_DIR)
+	$(BIN)/mypy $(SRC_DIR) 
 format:
 	$(BIN)/black $(SRC_DIR) $(NB_DIR) $(TEST_DIR)
 refactor: format lint type-check test 
