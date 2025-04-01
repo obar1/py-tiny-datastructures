@@ -26,14 +26,14 @@ and not less the classic:
  
 ### data structures 
 here we can add notebooks for a few data structures:
-- [Linked Lists](nb-ds/linked-lists.ipynb)
-- [Doubly Linked Lists](nb-ds/doubly-linked-lists.ipynb)
-- [Stacks & Queues](nb-ds/stacks-queues.ipynb)
-- [Trees](nb-ds/trees.ipynb)
-- [Hash Tables](nb-ds/hash-tables.ipynb)
-- [Graphs](nb-ds/graphs.ipynb)
-- [Heaps](nb-ds/heaps.ipynb)
-- [Recursive Binary Search Trees](nb-ds/recursive-binary-search-trees.ipynb)
+- [Linked Lists](nb/linked-lists.ipynb)
+- [Doubly Linked Lists](nb/doubly-linked-lists.ipynb)
+- [Stacks & Queues](nb/stacks-queues.ipynb)
+- [Trees](nb/trees.ipynb)
+- [Hash Tables](nb/hash-tables.ipynb)
+- [Graphs](nb/graphs.ipynb)
+- [Heaps](nb/heaps.ipynb)
+- [Recursive Binary Search Trees](nb/recursive-binary-search-trees.ipynb)
  
 ### experiments
 - [Tree Traversal](nb-experiments/tree-traversal.ipynb)
