@@ -56,7 +56,6 @@ def test_first_non_repeating_char():
 def test_group_anagrams():
     """
 
-
     HT: Group Anagrams ( ** Interview Question)"
 
     "You have been given an array of strings, where each string may contain only lowercase English letters. You need to write a function group_anagrams(strings) that groups the anagrams in the array together using a hash table (dictionary). The function should return a list of lists, where each inner list contains a group of anagrams."
@@ -97,8 +96,6 @@ def test_two_sum():
     """
 
     HT: Two Sum ( ** Interview Question)"
-
-    "two_sum()"
 
     "Problem:"
     "Given an array of integers nums and a target integer target, find the indices of two numbers in the array that add up to the target."
