@@ -1,4 +1,7 @@
+# Some Nodes
 class Node:
+    """Node with next, ll"""
+
     def __init__(self, value):
         self.value = value
         self.next = None
@@ -8,7 +11,7 @@ class Node:
 
 
 class NodeP:
-    """Node with next and prev"""
+    """Node with next and prev, dll"""
 
     def __init__(self, value):
         self.value = value
@@ -20,6 +23,8 @@ class NodeP:
 
 
 class NodeLR:
+    """Node with left and right, graph"""
+
     def __init__(self, value):
         self.value = value
         self.left = None

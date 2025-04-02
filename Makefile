@@ -5,6 +5,7 @@ VENV := venv
 BIN := $(VENV)/bin
 SRC_DIR := src
 TEST_DIR := tests
+SRC_NB_DIR :=  $(SRC_DIR)/nb
 help:
 	@echo "Available commands:"
 	@echo "  make setup         - Create virtual environment and install dependencies"
@@ -26,13 +27,13 @@ clean:
 	rm -rf .coverage
 	rm -rf .mypy_cache
 	rm -rf **/__pycache__
+	rm -rf **/**/__pycache__
 test:
 	PYTHONPATH=. $(BIN)/pytest $(TEST_DIR) -v
 lint:
-	$(BIN)/pylint $(SRC_DIR) $(TEST_DIR)
+	$(BIN)/pylint $(SRC_DIR) $(SRC_NB_DIR)  $(TEST_DIR) 
 type-check:
-	$(BIN)/mypy $(SRC_DIR) $(TEST_DIR)
+	$(BIN)/mypy $(SRC_DIR)  
 format:
-	$(BIN)/black $(SRC_DIR) $(TEST_DIR) 
-	find . -maxdepth 2 -type f -name "*.ipynb" | xargs -I {} bash -c "$(BIN)/black '{}'"
+	$(BIN)/black $(SRC_DIR)  $(TEST_DIR) 
 refactor: format lint type-check test 
