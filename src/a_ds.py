@@ -12,4 +12,5 @@ class ADS(ABC):
 
     @property
     def ds_func(self):
+        """to print what the ds can do"""
         return {x for x in self.__class__.__dict__ if not str(x).startswith("_")}
